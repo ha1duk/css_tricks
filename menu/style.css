@@ -44,4 +44,47 @@ header nav ul li a
     padding: 0 20px;
     color: #fff;
     text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active
+{
+    color: #fff;
+    background: #2196f3;
+}
+.menu-toogle
+{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 0 20px;
+    }
+    .menu-toogle
+    {
+        display: block;
+    }
+    header nav
+    {
+        /*display: none;*/
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 50px;
+        left: 0;
+        transition: 0.5s;
+    }
+    header nav ul 
+    {
+        display: block;
+    };
+
 }

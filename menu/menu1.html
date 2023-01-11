@@ -23,5 +23,14 @@
         </nav>
         <div class="menu-toogle"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </header>
+    <script  src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-toogle').click(function() {
+                $('nav').toogleClass('active')
+            })    
+        })
+
+    </script>
 </body>
 </html>
